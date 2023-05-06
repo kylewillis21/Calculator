@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            
+
+            <Label
+                x:Name="output"
+                Text="0"
+                FontSize="48"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Grid
+                RowSpacing="2"
+                ColumnSpacing="2"
+                HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Button
+                    Text="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="4"
+                    Clicked="ZeroClicked"/>
+                <Button
+                    Text="."
+                    Grid.Column="2"
+                    Grid.Row="4"/>
+                <Button
+                    Text="="
+                    Grid.Column="3"
+                    Grid.Row="4"
+                    Clicked="EqualClicked"/>
+                
+                <Button
+                    Text="1"
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    Clicked="OneClicked"/>
+                <Button
+                    Text="2"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    Clicked="TwoClicked"/>
+                <Button
+                    Text="3"
+                    Grid.Column="2"
+                    Grid.Row="3"
+                    Clicked="ThreeClicked"/>
+                <Button
+                    Text="+"
+                    Grid.Column="3"
+                    Grid.Row="3"
+                    Clicked="PlusClicked"/>
+
+                <Button
+                    Text="4"
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Clicked="FourClicked"/>
+                <Button
+                    Text="5"
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Clicked="FiveClicked"/>
+                <Button
+                    Text="6"
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    Clicked="SixClicked"/>
+                <Button
+                    Text="-"
+                    Grid.Column="3"
+                    Grid.Row="2"
+                    Clicked="MinusClicked"/>
+
+                <Button
+                    Text="7"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Clicked="SevenClicked"/>
+                <Button
+                    Text="8"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Clicked="EightClicked"/>
+                <Button
+                    Text="9"
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    Clicked="NineClicked"/>
+                <Button
+                    Text="x"
+                    Grid.Column="3"
+                    Grid.Row="1"
+                    Clicked="MultClicked"/>
+
+                <Button
+                    Text="C"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Clicked="ClearClicked"/>
+                <Button
+                    Text="+/-"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Clicked="NegClicked"/>
+                <Button
+                    Text="%"
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    Clicked="PerClicked"/>
+                <Button
+                    Text="/"
+                    Grid.Column="3"
+                    Grid.Row="0"
+                    Clicked="DivideClicked"/>
+                
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
